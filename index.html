@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>GYM</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>  
+</head>
+<body>
+<main>
+    <div class="fundo">
+        <div class="cadastro">
+            <div class="titulo">
+                <h1>Cadastro</h1>
+            </div>
+            <form method="POST" class="formulario" action="adicionar_action.php" enctype="multipart/form-data">
+                <div class="foto">
+                    <h2 class="foto-text">Foto</h2>
+                    <img id="uploadPreview"/>
+                </div>
+                <div class="input-wrapper">
+                    <label for="input-file">
+                        Selecionar Arquivo
+                    </label>
+                    <input type="file" name="foto" id="input-file" onchange="PreviewImage();" />
+                    <span id="file-name"></span>
+                </div>
+                <div class="nome">
+                    <input type="text" name="nome" class="input-field" placeholder="Nome" required>
+                    <input type="text" name="sobrenome" class="input-field" placeholder="Sobrenome" required>
+                    <input type="text" name="cpf" class="input-field" placeholder="CPF" required>
+                    <input type="date" name="data" class="input-field" placeholder="Data de Nascimento">
+                </div>
+                <div class="emailtel">
+                    <input type="email" name="email" class="input-field" placeholder="E-mail">
+                    <input type="text" name="ddd" class="input-field" placeholder="DDD">
+                    <input type="text" name="telefone" class="input-field" placeholder="Telefone">
+                </div>
+                <div class="local">
+                    <input type="text" name="rua" class="input-field" placeholder="Rua">
+                    <input type="text" name="numero" class="input-field" placeholder="Numero">
+                    <input type="text" name="bairro" class="input-field" placeholder="Bairro">
+                </div>
+                <div class="local-g">
+                    <input type="text" name="cidade" class="input-field" placeholder="Cidade">
+                    <input type="" name="estado" class="input-field" placeholder="Estado">
+                </div>
+                <div class="botoes">
+                <button type="submit" class="submit-btn">Cadastrar</button>
+                <a href="lista.php" class="submit-btn-lista">Lista de Usuários</a>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+<footer>
+creditos
+<a href="https://www.freepik.com/free-photos-vectors/sport">Sport photo created by freepik - www.freepik.com</a>
+</footer>
+</main>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
